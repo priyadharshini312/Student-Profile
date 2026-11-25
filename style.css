@@ -1,0 +1,123 @@
+
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6fb;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Navigation */
+header {
+    background: #202b46;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+/* Home */
+.hero {
+    text-align: center;
+    padding: 90px 20px;
+    background: #dfe8ff;
+}
+
+.hero h1 {
+    font-size: 42px;
+    color: #202b46;
+}
+
+.hero h2 {
+    margin: 10px 0;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 22px;
+    background: #202b46;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+/* Content sections */
+section:not(.hero) {
+    padding: 50px 10%;
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 20px;
+    color: #202b46;
+}
+
+.skills-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skills-list span {
+    background: #dfe8ff;
+    padding: 12px 22px;
+    border-radius: 20px;
+}
+
+.project-card {
+    background: white;
+    padding: 25px;
+    margin: 15px auto;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px #00000015;
+}
+
+button {
+    padding: 12px 25px;
+    background: #202b46;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background: #202b46;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Mobile responsive design */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+}
